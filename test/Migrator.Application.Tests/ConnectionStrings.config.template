@@ -1,0 +1,4 @@
+<connectionStrings>
+  <!-- Connection string to whole DB server; it doesn't need to contain database name (= Initial Catalog property) -->
+  <add name="Main" connectionString="" />
+</connectionStrings>

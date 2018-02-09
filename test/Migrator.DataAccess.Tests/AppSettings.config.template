@@ -1,0 +1,4 @@
+﻿<appSettings>
+  <add key="NewVersionDatabaseBackupLocation" value="" />
+  <add key="OldVersionDatabaseBackupLocation" value="" />
+</appSettings>

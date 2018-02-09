@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-16" ?>
+<content>
+    <region id="title">Brazil Natural Barra Grande</region>
+    <region id="teaser">fruity, sweet and smooth</region>
+    <region id="picture">&lt;img alt="Brazil Natural Barra Grande" border="0" class="responsive-image" src="~/DancingGoat/media/EmailCampaigns/dancing-goat-newsletter.jpg" style="height:auto" width="600" /&gt;</region>
+    <region id="text">
+        &lt;table border="0" cellpadding="0" cellspacing="0" class="responsive-table" width="600"&gt;
+        &lt;tbody&gt;
+        &lt;tr&gt;
+        &lt;td align="left" style="font-family: Verdana, sans-serif;font-size: 16px;"&gt;Taste the Natural Barra Grande from the high altitudes of Poco Fundo in the Minas Gerais in Brazil where a family business has been growing coffee for three generations and is really keen on natural processing.&lt;br /&gt;
+        &lt;br /&gt;
+        The path of the Barra Grande has not always been shiny. Father of Sildes Caixeta, the current owner, was forced to sell their company when Sildes was just 5 years old. After long years of waiting, Sildes accomplished to buy the company back and now says that patience is the family secret on how to grow good coffee and teaches his motto to his son.&lt;br /&gt;
+        &lt;br /&gt;
+        This coffee is a blend of Yellow Catuai and Mundo Novo which excellent large beans are patio dried and create a creamy mouthfeel and a cherry flavor with a pinch of chocolate and caramel.&lt;br /&gt;
+        &amp;nbsp;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+        &lt;td align="center"&gt;&amp;nbsp;
+        &lt;table cellpadding="0" cellspacing="0"&gt;
+        &lt;tbody&gt;
+        &lt;tr&gt;
+        &lt;td align="center" bgcolor="#08768C" height="45" style="padding:5px 10px 5px 10px;border-width: 2px; color: #ffffff; display: block; border-color: #08768C; border-style: solid;" width="180"&gt;&lt;a href="~/Store/Coffee/Brazil-Natural-Barra-Grande" style="font-size:16px; font-weight: normal; font-family: 'Source Sans Pro', sans-serif; text-decoration: none; line-height:45px; width:180; display:inline-block"&gt;&lt;span style="color: #ffffff"&gt;MORE DETAILS&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/tbody&gt;
+        &lt;/table&gt;
+        &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/tbody&gt;
+        &lt;/table&gt;
+    </region>
+</content>
