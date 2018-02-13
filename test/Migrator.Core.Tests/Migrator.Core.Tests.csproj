@@ -43,6 +43,9 @@
     <Reference Include="System.Web.Extensions" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\CommonAssemblyInfo.cs">
+      <Link>Properties\CommonAssemblyInfo.cs</Link>
+    </Compile>
     <Compile Include="EmbeddedResourceHelper.cs" />
     <Compile Include="GuidGeneratorTests.cs" />
     <Compile Include="IssueMigratorTests.cs" />
