@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using Migrator.Core;
 
-namespace NewsletterTemplateMigrator
+namespace NewsletterMigrator
 {
     public class LogService : ILogService
     {

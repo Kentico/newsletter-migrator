@@ -1,4 +1,4 @@
-﻿namespace NewsletterTemplateMigrator
+﻿namespace NewsletterMigrator
 {
     internal class ProgramConfiguration
     {

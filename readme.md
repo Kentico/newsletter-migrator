@@ -25,8 +25,8 @@ In Kentico 11, data layer of email marketing objects has been significantly refa
 
 
 ## Usage ##
-1. Write connection strings to `NewsletterTemplateMigrator.exe.config` file.
-1. Open command prompt at location where you've unzipped the archive and run `NewsletterTemplateMigrator.exe`
+1. Write connection strings to `NewsletterMigrator.exe.config` file.
+1. Open command prompt at location where you've unzipped the archive and run `NewsletterMigrator.exe`
  
 
 ## Manual steps after migration (required) ##

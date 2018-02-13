@@ -7,8 +7,8 @@
     <ProjectGuid>{8A50EA7B-8174-4682-B946-88C1445A8A58}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NewsletterTemplateMigrator</RootNamespace>
-    <AssemblyName>NewsletterTemplateMigrator</AssemblyName>
+    <RootNamespace>NewsletterMigrator</RootNamespace>
+    <AssemblyName>NewsletterMigrator</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

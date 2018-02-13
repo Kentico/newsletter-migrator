@@ -3,7 +3,7 @@ using System.Configuration;
 
 using Migrator.Application;
 
-namespace NewsletterTemplateMigrator
+namespace NewsletterMigrator
 {
     class Program
     {
