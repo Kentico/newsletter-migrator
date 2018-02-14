@@ -20,12 +20,27 @@ namespace Migrator.DataAccess
         }
 
         /// <summary>
-        /// Retrieves templates from the database.
+        /// Retrieves templates being used for marketing emails (not (un)subscription or double opt-in templates) from the database.
         /// </summary>
         /// <param name="whereCondition">Where condition</param>
         /// <returns>Collection of templates</returns>
         /// <exception cref="SqlQueryFailedException"></exception>
-        public IReadOnlyCollection<TemplateSource> GetTemplates(string whereCondition = null)
+        public IReadOnlyCollection<TemplateSource> GetEmailTemplates(string whereCondition = null)
+        {
+            const string TEMPLATE_TYPE_CONDITION = "[TemplateType] = N'I'";
+            string completeWhereCondition = String.IsNullOrWhiteSpace(whereCondition) ? TEMPLATE_TYPE_CONDITION : $"{TEMPLATE_TYPE_CONDITION} AND ({whereCondition})";
+
+            return GetAllTemplates(completeWhereCondition);
+        }
+
+
+        /// <summary>
+        /// Retrieves ALL templates regardless thier type from the database .
+        /// </summary>
+        /// <param name="whereCondition">Where condition</param>
+        /// <returns>Collection of templates</returns>
+        /// <exception cref="SqlQueryFailedException"></exception>
+        internal IReadOnlyCollection<TemplateSource> GetAllTemplates(string whereCondition)
         {
             var query = new StringBuilder("SELECT [TemplateGUID], [TemplateBody], [TemplateHeader], [TemplateFooter], [TemplateStylesheetText], [SiteGUID] FROM [Newsletter_EmailTemplate] INNER JOIN [CMS_Site] ON [SiteID] = [TemplateSiteID]");
 

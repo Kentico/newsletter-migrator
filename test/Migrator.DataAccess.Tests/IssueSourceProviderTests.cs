@@ -48,7 +48,7 @@ namespace Migrator.DataAccess.Tests
             {
                 var issueSourceProvider = new IssueSourceProvider(ConnectionString, LogService);
 
-                var sourceIssues = issueSourceProvider.GetIssues();
+                var sourceIssues = issueSourceProvider.GetAllIssues();
 
                 Assert.Multiple(() =>
                 {

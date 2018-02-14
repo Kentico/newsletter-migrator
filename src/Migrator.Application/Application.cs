@@ -8,13 +8,13 @@ namespace Migrator.Application
 {
     public class Application
     {
-        public static void MigrateAllNewsletters(string sourceConnectionString, string targetConnectionString, ILogService logService)
+        public static void MigrateAllNewsletters(string sourceConnectionString, string targetConnectionString, ILogService logService, string issuesFilter = null, string templatesFilter = null)
         {
             try
             {
                 // Obtain templates
                 var templateProvider = new TemplateSourceProvider(sourceConnectionString, logService);
-                var templates = templateProvider.GetTemplates("[TemplateType] = N'I'");
+                var templates = templateProvider.GetEmailTemplates(templatesFilter);
 
                 // Migrate templates
                 var templateMigrator = new TemplateMigrator();
@@ -47,7 +47,7 @@ namespace Migrator.Application
 
                     // Get issues
                     var issueSourceProvider = new IssueSourceProvider(sourceConnectionString, logService);
-                    var issues = issueSourceProvider.GetIssues($"[IssueSiteID] = (SELECT TOP 1 [SiteID] FROM [CMS_Site] WHERE [SiteGUID] = '{siteGuid}')");
+                    var issues = issueSourceProvider.GetIssuesInSite(siteGuid, issuesFilter);
 
                     // Migrate issues
                     var issueMigrator = new IssueMigrator(widgetSettings, logService);

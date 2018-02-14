@@ -49,7 +49,7 @@ namespace Migrator.DataAccess.Tests
             {
                 var logger = Substitute.For<ILogService>();
                 var tsp = new TemplateSourceProvider(ConnectionString, logger);
-                var actualTemplates = tsp.GetTemplates(whereCondition);
+                var actualTemplates = tsp.GetAllTemplates(whereCondition);
 
                 Assert.That(actualTemplates.Count(), Is.EqualTo(expectedCount));
             }

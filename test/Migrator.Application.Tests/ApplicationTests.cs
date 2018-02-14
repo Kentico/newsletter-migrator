@@ -47,7 +47,9 @@ namespace Migrator.Application.Tests
         [Test]
         public void MigrateAllNewsletters()
         {
-            Assert.That(() => Application.MigrateAllNewsletters(SourceDbConnectionString, TargetDbConnectionString, LogService), Throws.Nothing);
+            string issuesFilter = ConfigurationManager.AppSettings["issuesFilter"];
+            string templatesFilter = ConfigurationManager.AppSettings["templatesFilter"];
+            Assert.That(() => Application.MigrateAllNewsletters(SourceDbConnectionString, TargetDbConnectionString, LogService, issuesFilter, templatesFilter), Throws.Nothing);
         }
     }
 }
