@@ -1,5 +1,7 @@
 ﻿# Kentico NewsletterMigrator #
 
+[![Build status](https://ci.appveyor.com/api/projects/status/c168uu238lgblx7i?svg=true)](https://ci.appveyor.com/project/kentico/newsletter-migrator)
+
 NewsletterMigrator is a command-line utility which helps you to preserve Kentico marketing emails and templates after the upgrade to Kentico 11.
 
 ## Introduction ##
