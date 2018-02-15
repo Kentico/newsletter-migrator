@@ -92,7 +92,7 @@
   </Target>
 -->
   <Target Name="AfterBuild">
-    <Copy SourceFiles="ConnectionStrings.config" DestinationFolder="$(OutputPath)" Condition="Exists('ConnectionString.config')" />
+    <Copy SourceFiles="ConnectionStrings.config" DestinationFolder="$(OutputPath)" Condition="Exists('ConnectionStrings.config')" />
     <Copy SourceFiles="AppSettings.config" DestinationFolder="$(OutputPath)" Condition="Exists('AppSettings.config')"/>
   </Target>
 </Project>
