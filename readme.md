@@ -52,6 +52,24 @@ In Kentico 11, the data layer of email marketing objects was significantly refac
     * Output of the widget is the raw content of `Code` property.
 1. Inserts one _temporary_ widget per zone in the marketing email templates and populates the `Code` property of the widget with data from the particular region of the original email.
 
+### How restrict objects which are affected by the utility ###
+
+You may want to restrict the utility to updating just a subset of all marketing emails and their templates. The configuration allows you to define filtering condition for both emails and templates separately. The filtering condition is SQL expression and represents a part of `WHERE` clause of the query which is used to select data from respective tables (`Newsletter_NewsletterIssue`, `Newsletter_EmailTemplate`). To define issues filter, edit `NewsletterMigrator.exe.config`, scan for `<add key="issuesFilter" ... >` element and enter given expression as a value of its `value` attribute. To define templates filter, proceed the same as for issues filter but modify `<add key="templatesFilter" ...>` element instead.
+
+Example:
+Let's migrate only objects from the site with ID = 3
+```xml
+<appSettings>
+   <add key="issuesFilter" value="IssueSiteID = 3" />
+   <add key="templatesFilter" value="TemplateSiteID = 3" />
+</appSettings>
+```
+
+Notes about restricting emails and templates:
+* Any column of respective DB table or sub-query can be used in the filter condition.
+* Be aware that if you restrict templates you need to restrict issues as well. 
+* If you restrict issues you don't have to restrict templates necessarily.
+
 
 ## Notes ##
 * Do not re-run the utility if it fails or doesn't terminates normally. In such case, restore upgraded DB from the backup.
