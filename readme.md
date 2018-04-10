@@ -22,7 +22,7 @@ In Kentico 11, the data layer of email marketing objects was significantly refac
 
 ## Installation ##
 
-* Download the latest binaries from Releases.
+* Download the latest binaries from [Releases](https://github.com/Kentico/newsletter-migrator/releases/latest).
 * Unzip the archive to any location of your choice.
 
 
