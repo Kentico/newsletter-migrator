@@ -82,4 +82,3 @@ Notes about restricting emails and templates:
     * _Newsletter_EmailWidgetTemplate_
 * The utility only works with versions 10 and 11 of Kentico database.
 
-![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/newsletter-migrator?pixel)
